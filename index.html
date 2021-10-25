@@ -33,7 +33,76 @@
 
         <div class="menuImage">
             <img src="images/trolley.png" alt="">
+            <div class="trolleyCount"></div>
+            <div class="trolleyMenuBlock">
+
+                <div class="trolleyMenu empty closeTrolley">
+                    <div class="emptyText">
+                        <h3>Cart is empty, put in it something from here.</h3>
+                    </div>
+                
+                    <div class="notEmptyTrolley">
+                        <div class="breakfastTrolley">
+                            <h3 class="eatingName">Breakfast</h3>
+                            <div class="foodOnTrolley">
+                                <div class="typeOfFoodItemBlock">
+                                    <div class="typeOfFoodItem">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="lunchTrolley">
+                            <h3 class="eatingName">Lunch</h3>
+                            <div class="foodOnTrolley">
+                                <div class="typeOfFoodItemBlock">
+                                    <div class="typeOfFoodItem">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="dinnerTrolley">
+                            <h3 class="eatingName">Dinner</h3>
+                            <div class="foodOnTrolley">
+                                <div class="typeOfFoodItemBlock">
+                                    <div class="typeOfFoodItem">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="drinksTrolley">
+                            <h3 class="eatingName">Drinks</h3>
+                            <div class="foodOnTrolley">
+                                <div class="typeOfFoodItemBlock">
+                                    <div class="typeOfFoodItem">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="orderCostsBlockTrolley">
+                            <div class="costsHeader">
+                                <p>Order cost</p>
+                            </div>
+                            <div class="cost">
+                                <p class="costBasket">fvv</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn orderBtn">Order periodical</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
 
     </div>
 
@@ -71,6 +140,7 @@
                 <div class="breakfastBtn menuItems selected">
                     <img src="images/breakfast.png" alt="">
                     <p>Breakfast</p>
+
                 </div>
                 <div class="lunchBtn menuItems">
                     <img src="images/lunch.png" alt="">
@@ -111,8 +181,8 @@
                 <div class="foodElement">
                     <div class="aboutFood">
                         <div class="foodElementText">
-                            <h2>Croissants</h2>
-                            <p>Classic French croissant</p>
+                            <h2>Benedicts</h2>
+                            <p>Grilled vegetables, fried peppers and toast</p>
                         </div>
                         <div class="foodImageBlock">
                             <div class="foodImageTwo foodImage"></div>
@@ -121,7 +191,7 @@
                     </div>
 
                     <div class="price">
-                        <h3>from 1$</h3>
+                        <h3>from 8$</h3>
                         <button class="btn secondFood">Choice</button>
                     </div>
                 </div>
@@ -129,8 +199,8 @@
                 <div class="foodElement">
                     <div class="aboutFood">
                         <div class="foodElementText">
-                            <h2>Croissants</h2>
-                            <p>Classic French croissant</p>
+                            <h2>Porridge</h2>
+                            <p>A steaming, creamy bowl of Porridge is something magical</p>
                         </div>
                         <div class="foodImageBlock">
                             <div class="foodImageThree foodImage"></div>
@@ -147,8 +217,8 @@
                 <div class="foodElement">
                     <div class="aboutFood">
                         <div class="foodElementText">
-                            <h2>Croissants</h2>
-                            <p>Classic French croissant</p>
+                            <h2>Pancakes</h2>
+                            <p>Classic fluffy American pancakes</p>
                         </div>
                         <div class="foodImageBlock">
                             <div class="foodImageFour foodImage"></div>
@@ -157,7 +227,7 @@
                     </div>
 
                     <div class="price">
-                        <h3>from 1$</h3>
+                        <h3>from 5$</h3>
                         <button class="btn fourthFood">Choice</button>
                     </div>
                 </div>
@@ -173,37 +243,96 @@
                     <h3>Choice of options</h3>
                     <div class="fillingsItems">
                         <div class="fillingsAndCost">
-                            <div class="salmon fillingsItem">
-                                
+                            <div class="fillingOne fillingsItem">
                             </div>
-                            <h4>trout</h4>
-                            <p>$5</p>
+                            <div class="fillingsName">
+                                <h4>trout</h4>
+                            </div>
+                            <div class="fillingOneCost">
+                                <p>$5</p>
+                            </div>
+
                         </div>
 
                         <div class="fillingsAndCost">
-                            <div class="bacon fillingsItem">
+                            <div class="fillingTwo fillingsItem">
+                            </div>
+                            <div class="fillingsName">
                                 <h4>bacon</h4>
                             </div>
-                            <p>$3</p>
+                            <div class="fillingTwoCost">
+                                <p>$3</p>
+                            </div>
                         </div>
 
                         <div class="fillingsAndCost">
-                            <div class="jam fillingsItem">
+                            <div class="fillingThree fillingsItem">
+                            </div>
+                            <div class="fillingsName">
                                 <h4>jam</h4>
                             </div>
-                            <p>$2</p>
+                            <div class="fillingThreeCost">
+                                <p>$2</p>
+                            </div>
                         </div>
 
                         <div class="fillingsAndCost">
-                            <div class="without fillingsItem">
+                            <div class="fillingFour without fillingsItem">
+                            </div>
+                            <div class="fillingsName">
                                 <h4>without filling</h4>
                             </div>
-                            <p>$1</p>
+
+                            <div class="fillingFourCost">
+                                <p>$1</p>
+                            </div>
                         </div>
                     </div>
                     <button class="addFood btn">Add to Basket</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="orderBlock">
+        <div class="orderBackground"></div>
+        <div class="orderModal">
+            <div class="closeOrderBtn">
+                <img src="images/close.png" alt="">
+            </div>
+            <h3>Order periodical</h3>
+            <p>We'll call you back ASAP to clarify the order</p>
+            <div class="basketItems">
+            </div>
+            <form action="">
+                <div>
+                    <label for="">Phone number</label>
+                    <input type="tel">
+                </div>
+                <div>
+                    <label for="">Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Delivery address</label>
+                    <input type="text">
+                </div>
+                <div class="orderCosts">
+                    <label for="">Order costs</label>
+                    <p></p>
+                </div>
+            </form>
+            <div class="sendOrderBtn">
+                <button class="btn">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="successfullyOrder">
+        <div class="successfullyBackground"></div>
+        <div class="successfullyModal">
+            <h3>Your order has been sent for processing</h3>
+            <p>We will call you back within 5min</p>
+            <button class="btn">Ok</button>
         </div>
     </div>
     <script src="script.js"></script>

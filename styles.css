@@ -14,14 +14,41 @@ body {
 }
 
 .menuImage {
-    background-color: rgb(207, 141, 79);
+    height: 35px;
+    width: 35px;
+    background-color: rgb(207, 207, 207);
     padding: 7px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin: 10px;
+    transition: background-color .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
 }
 
 .menuImage img {
-    height: 30px;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.trolleyCount {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    right: 15px;
+    background-color: rgb(207, 141, 79);
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .menuHeader h4 {
@@ -34,7 +61,96 @@ body {
 
 .menuHeader {
     margin-left: 10px;
+    margin-top: 10px ;
 }
+
+.trolleyMenuBlock {
+    position: relative;
+}
+
+.closeTrolley {
+    display: none !important;
+}
+
+.trolleyMenu {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(209, 208, 208, 0.233);
+    backdrop-filter: blur(10px);
+    right: 25px;
+    top: 25px;
+    border-radius: 20px;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty h3 {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.eatingName {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    text-align: center;
+    margin: 5px 0;
+    display: none;
+}
+
+.notEmptyTrolley {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodName {
+    width: 220px;
+}
+
+.cost {
+    width: 43px;
+    margin-top: 5px;
+}
+
+.typeOfFoodItemBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.typeOfFoodItem {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    flex-direction: column;
+}
+
+.typeOfFoodItem div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typeOfFoodItem p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+
 
 /* MAIN HEADER BLOCK */
 .mainHeaderImage img {
@@ -90,7 +206,7 @@ body {
 .btn {
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(88, 88, 88);
     border: 1px solid rgba(255, 255, 255, 0.466);
     font-size: 17px;
     padding: 5px 20px;
@@ -99,7 +215,7 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover{
     background-color: rgb(207, 141, 79);
 }
 
@@ -186,6 +302,7 @@ body {
 
 .menuItems img {
     cursor: pointer;
+    border-radius: 50%;
 }
 
 /* FILLINGS */
@@ -206,8 +323,8 @@ body {
 }
 
 .fillingsContainer {
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 315px;
     position: fixed;
     z-index: 2;
     bottom: 40%;
@@ -245,14 +362,28 @@ body {
     margin: 5px;
     background-position: center;
     background-size: cover;
-    backdrop-filter: brightness(10%);
+    filter: brightness(80%);
+    transition: box-shadow, filter .4s ease;
+    cursor: pointer;
 }
 
-.fillingsItem h4{
-    font-size: 19px;
+.selectedFood {
+    filter: brightness(120%);
+    box-shadow: 0 2px 10px #fff;
+}
+
+
+.fillingsAndCost h4{
+    font-size: 15px;
     color: #fff;
     font-family: 'Nunito', sans-serif;
     text-shadow: 0 2px 10px rgb(0, 0, 0);
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.fillingsName {
+    height: 45px;
 }
 
 .fillings .without {
@@ -283,6 +414,7 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #fff;
     margin-top: 0;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
 }
 
 .foodElement h3 {
@@ -303,6 +435,7 @@ body {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     margin:  0;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
 }
 
 .foodElement {
@@ -359,4 +492,201 @@ body {
 .menuContent {
     display: flex;
     justify-content: center;
+}
+
+.foodImageTwo {
+    background-image: url("images/benedicts.jpg");
+}
+
+.foodImageOne{
+    background-image: url("images/croissant.jpg");
+}
+
+.foodImageThree {
+    background-image: url("images/porridge.jpg");
+}
+
+.foodImageFour {
+    background-image: url("images/pancakes.jpg");
+}
+
+.selected {
+    filter: brightness(110%) !important;
+}
+
+.selected img{
+    box-shadow: 0 2px 10px #fff;
+}
+
+.menuItems {
+    filter: brightness(50%);
+    transition: box-shadow, filter .4s ease;
+}
+
+/* FILL IN ORDER */
+.orderBlock {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.orderBackground {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 1;
+}
+
+.orderModal {
+    width: 550px;
+    height: 315px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40%;
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeOrderBtn {
+    position: fixed;
+    top: -14%;
+    right: -8%;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.closeOrderBtn img {
+    width: 40px;
+}
+
+.orderModal h3, .successfullyModal h3 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
+}
+
+.orderModal label {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.orderModal p, .successfullyModal p {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 0;
+}
+
+.orderModal p {
+    margin-bottom: 0;
+}
+
+.orderModal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderModal form div {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding: 5px;
+    align-items: center;
+}
+
+.orderModal input{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+}
+
+.orderCostsBlockTrolley {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.costsHeader {
+    width: 220px;
+}
+
+.orderCostsBlockTrolley {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.successfullyBackground {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 1;
+}
+
+.successfullyOrder {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.successfullyModal {
+    width: 550px;
+    height: 315px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40%;
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redBorder {
+    border: rgb(211, 7, 7) 1px solid
+}
+
+.changeCount {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 60px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 20px;
+    margin-top: 0;
+}
+
+.changeCount p {
+    margin: 0;
+}
+
+.addFoodOnBasket, .removeFood {
+    width: 11px;
+    cursor: pointer;
 }
