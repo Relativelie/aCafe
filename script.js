@@ -398,3 +398,22 @@ function addOrRemoveFoodFromBasket(e) {
     }
     addFoodOnTrolley(basket)
 }
+
+// EVENTS
+
+let eventBlock = document.querySelector(".newsBlockContainer")
+function showEvents() {
+
+    eventBlock.style.opacity = 1;
+    eventBlock.style.marginTop = '0px';
+}
+
+
+let observer = new IntersectionObserver(function (e) {
+    if (e[0].isIntersecting === true) {
+        showEvents();
+        observer.disconnect();
+    }
+}, { threshold: [0.4] });
+
+observer.observe(document.querySelector(".eventBlockHeader "));

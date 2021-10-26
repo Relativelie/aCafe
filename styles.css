@@ -240,6 +240,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .aboutUsItem p {
@@ -689,4 +690,598 @@ body {
 .addFoodOnBasket, .removeFood {
     width: 11px;
     cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(29, 29, 29);
+    box-shadow: 0 0 10px rgb(14, 13, 13);
+    margin-top: 100px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-size: 100% ;
+}
+
+.numbers {
+    display: flex;
+}
+
+.numbersItem {
+    padding: 25px;
+    text-align: center;
+}
+
+.phoneNumberStyle {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.numberPar {
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.socialNetworkItem {
+    padding: 15px;
+}
+
+.socialNetworkItemImg {
+    height: 50px;
+    border-radius: 14px;
+    filter: grayscale(100%) opacity(70%);
+}
+
+.socialNetworkItemImg:hover {
+    filter: none;
+} 
+
+.socialNetwork {
+    display: flex;
+    align-items: center;
+}
+
+.contactMe {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.contactMeBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.contactMeLink {
+    margin-left: 5px;
+}
+
+/* NEWS */
+.newsItem img {
+    width: 470px;
+    box-shadow: 0 2px 5px;
+}
+
+.newsBlock {
+    height: 450px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.newsBlockContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 300px;
+    transition: all 1.5s ease;
+    /* transition: opacity 1.5s ease; */
+    opacity: 0;
+}
+
+.newsText {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(39, 39, 39, 0.671);
+    position: absolute;
+    top: 190px
+}
+
+.newsTextBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsheader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.eventBlockHeader {
+    margin-bottom: 50px;
+}
+
+.newsheader h3 {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.infoAboutEvent {
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.infoAboutEvent p {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.eventDate {
+    font-family: 'Dancing Script', cursive !important;
+}
+
+@media all and (max-width: 1415px) {
+    .newsItem img {
+        width: 400px;
+    }
+
+    .newsText {
+        width: 350px;
+    }
+}
+
+@media all and (max-width: 1210px) {
+    .newsItem img {
+        width: 350px;
+    }
+
+    .newsText {
+        width: 300px;
+        top: 120px;
+    }
+
+    .infoAboutEvent p {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .newsheader h3 {
+        font-size: 17px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .foodContainer {
+        width: 90%;
+    }
+
+    .blockHeaders h2 {
+        font-size: 25px;
+    }
+
+    .aboutUsItem p {
+        font-size: 20px;
+    }
+
+    .newsItem img {
+        width: 300px;
+    }
+
+    .newsText {
+        width: 250px;
+        height: 260px;
+        top: 80px;
+    }
+
+}
+
+@media all and (max-width: 910px) {
+    .aboutUsContainer {
+        position: relative;
+    }
+
+    .aboutUsContainer img {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .imageOne {
+        left: 60px;
+    }
+
+    .imageTwo {
+        right: 60px;
+    }
+
+    .aboutUsItem {
+        z-index: 1;
+    }
+
+    .foodElement {
+        margin: 10px;
+    }
+
+    .newsItem img {
+        width: 250px;
+    }
+
+    .newsText {
+        width: 240px;
+    }
+
+    .fillingsContainer, .orderModal, .successfullyModal {
+        top: 13%;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .foodElement {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foodElement h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .foodElement p {
+        font-size: 12px;
+    }
+
+    .foodElement h3 {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .foodImage {
+        bottom: -100px;
+        width: 150px;
+        height: 150px;
+        left: 150px;
+    }
+
+    .phoneNumberStyle {
+        font-size: 15px;
+    }
+
+    .numberPar {
+        margin: 0;
+    }
+
+    .socialNetworkItem img {
+        height: 30px;
+    }
+
+    .socialNetworkItem {
+        padding: 10px;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItems img {
+        width: 70px;
+    }
+
+    .menuItems p {
+        font-size: 15px;
+    }
+
+    .menuButtonsItem {
+        margin-bottom: 20px;
+    }
+
+    .aboutUsItem {
+        height: 250px;
+        width: 210px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .aboutUsContainer img {
+        height: 270px;
+    }
+
+    .aboutUsItem p {
+        font-size: 15px;
+    }
+
+    .aboutUsItem h2 {
+        font-size: 15px;
+    }
+
+    .imageOne {
+        left: 160px;
+    }
+
+    .imageTwo {
+        right: 160px;
+    }
+
+    .newsItem img {
+        width: 200px;
+    }
+
+    .newsText {
+        width: 110%;
+        top: -5px;
+        height: 150px;
+    }
+
+    .infoAboutEvent p {
+        font-size: 12px;
+    }
+
+    .infoAboutEvent {
+        padding: 0;
+        margin: 5px;
+    }
+
+    .newsBlock {
+        height: 200px;
+    }
+
+    .aboutUsContainer, #cafeMenu {
+        margin-top: 50px;
+    }
+}
+
+
+@media all and (max-width: 650px) {
+    .newsBlockContainer {
+        flex-direction: column;
+    }
+
+    .newsBlock {
+        height: 500px;
+    }
+
+    .newsItem {
+        margin-top: 20px;
+    }
+
+    .newsheader, .infoAboutEvent {
+        width: 70%;
+    } 
+
+    .infoAboutEvent p {
+        font-size: 15px;
+    }
+
+    .newsText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .eventBlockHeader {
+        margin-bottom: 20px;
+    }
+
+    .menuForMobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .menuButtonsItem {
+        flex-direction: column;
+    }
+
+    .fillings {
+        left: 0;
+    }
+
+    .fillingsContainer, .orderModal, .successfullyModal {
+        width: 450px;
+    }
+
+    .fillingsContainer {
+        height: 285px;
+    }
+
+    .closeBtn img, .closeBtn, .closeOrderBtn, .closeOrderBtn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .closeBtn, .closeOrderBtn {
+        top: -10%;
+        right: -5%;
+    }
+
+    .fillingsItem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .imageOne {
+        left: 60px;
+    }
+
+    .imageTwo {
+        right: 60px;
+    }
+
+    .fillingsName {
+        height: 47px;
+    }
+
+    .fillingsName h4 {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .fillingsContainer, .orderModal, .successfullyModal {
+        width: 380px;
+    }
+
+    .closeBtn img, .closeBtn, .closeOrderBtn, .closeOrderBtn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .closeBtn, .closeOrderBtn {
+        top: -8%;
+        right: -5%;
+    }
+
+    .fillingsItem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .fillingsName {
+        height: 47px;
+    }
+
+    .phoneNumberStyle, .numberPar {
+        font-size: 12px;
+    }
+
+    .trolleyMenu {
+        width: 300px;
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .menuHeader h4 {
+        font-size: 10px;
+    }
+
+    .newsText {
+        height: 200px;
+    }
+
+    .newsItem {
+        margin-top: 60px;
+    }
+
+    .newsBlock {
+        height: 600px;
+    }
+
+    .imageOne {
+        left: 20px;
+    }
+
+    .imageTwo {
+        right: 20px;
+    }
+
+    .empty h3 {
+        font-size: 20px;
+    }
+
+    .fillingsContainer, .orderModal, .successfullyModal {
+        width: 300px;
+    }
+
+    .closeBtn img, .closeBtn, .closeOrderBtn, .closeOrderBtn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .fillingsContainer, .successfullyModal {
+        height: 255px;
+    }
+
+    .orderModal {
+        height: 195px;
+    }
+
+    .closeBtn, .closeOrderBtn {
+        top: -13%;
+    }
+
+    .trolleyMenu, .typeOfFoodItem, .orderCostsBlockTrolley {
+        width: 280px;
+    }
+
+    .fillingsItem {
+        width: 50px;
+        height: 50px;
+    }
+
+    .orderModal p {
+        font-size: 12px;
+    }
+
+    .orderModal label, .orderModal input {
+        font-size: 12px;
+    }
+
+    .orderModal form div {
+        width: 100%;
+    }
+
+    .eventBlockHeader {
+        margin-bottom: -40px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .foodContainer {
+        width: 70%;
+    }
+
+    .menuContent {
+        width: 215px;
+    }
+
+    .mainHeaderText h1 {
+        font-size: 30px;
+    }
+
+    .mainHeaderText p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .mainHeaderText h2 {
+        font-size: 25px;
+    }
+
+    .foodElement {
+        height: 130px;
+    }
+
+    .newsItem {
+        margin-top: 90px;
+    }
+
+    .newsText {
+        height: 250px;
+    }
+
+    .footer {
+        margin-top: 270px;
+    }
 }
