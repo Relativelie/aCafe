@@ -117,18 +117,36 @@ function buildingMenu(e) {
 
 
 // choose food
-document.querySelector(".fillingOne").addEventListener("click", chooseFood);
-document.querySelector(".fillingTwo").addEventListener("click", chooseFood);
-document.querySelector(".fillingThree").addEventListener("click", chooseFood);
-document.querySelector(".fillingFour").addEventListener("click", chooseFood);
+document.querySelector(".fillingsAndCostOne").addEventListener("click", chooseFood);
+document.querySelector(".fillingsAndCostTwo").addEventListener("click", chooseFood);
+document.querySelector(".fillingsAndCostThree").addEventListener("click", chooseFood);
+document.querySelector(".fillingsAndCostFour").addEventListener("click", chooseFood);
+
+
 
 function chooseFood(e) {
-    if (e.srcElement.classList.value.split(" ").indexOf("selectedFood") != -1) {
-        document.querySelector(`.${e.srcElement.classList[0]}`).classList.remove("selectedFood");
+    if (e.srcElement.classList.value.indexOf("fillingsAndCost") === -1 && e.srcElement.classList.value != "") {
+
+        if (e.srcElement.classList.value.split(" ").indexOf("selectedFood") != -1) {
+            document.querySelector(`.${e.srcElement.classList[0]}`).classList.remove("selectedFood");
+        }
+    
+        else {
+            document.querySelector(`.${e.srcElement.classList[0]}`).classList.add("selectedFood");
+        }
     }
 
     else {
-        document.querySelector(`.${e.srcElement.classList[0]}`).classList.add("selectedFood");
+        let b = Object.values(e.currentTarget.childNodes[1].classList);
+       typeof b;
+        if (b.indexOf("selectedFood") != -1) {
+            document.querySelector(`.${b[0]}`).classList.remove("selectedFood");
+        }
+    
+        else {
+            document.querySelector(`.${b[0]}`).classList.add("selectedFood");
+        }
+        
     }
 }
 
