@@ -14,7 +14,7 @@ const foodDict = {
     "dinner": [
         ["Pasta", "Our appetizers should be big on flavour, small on size and price", "from $2", ["with bacon", "$5"], ["with beef", "$6"], ["with cheese", "$3"], ["with chicken", "$2"], "pasta.jpg", "bacon.jpg", "beef.jpg", "cheese.jpg", "chicken.jpg"],
         ["Seafood", "Always a great choice", "from $12", ["shrimp", "$15"], ["oysters", "$12"], ["crayfish", "$16"], ["salmon", "$25"], "seafood.jpg", "shrimp.jpg", "oysters.jpg", "crayfish.jpg", "salmon.jpg"],
-        ["Meat", "Always a great choice", "from $10", ["Half roasted lemon chicken", "$10"], ["Lightly smoked & grilled pork chop", "$13"], ["Veal osso bucco", "$14"], ["Grilled tuscan rubbed filet mignon", "$15"], "meat.jpg", "lemonChicken.jpg", "porkChop.jpg", "meatThree.jpg", "filetMignon.jpg"],
+        ["Meat", "Always a great choice", "from $10", ["Half roasted lemon chicken", "$10"], ["Lightly smoked & grilled pork chop", "$13"], ["Half roasted veal osso bucco", "$14"], ["Grilled tuscan rubbed filet mignon", "$15"], "meat.jpg", "lemonChicken.jpg", "porkChop.jpg", "meatThree.jpg", "filetMignon.jpg"],
         ["Wraps", "Always a great choice", "from $2", ["Spicy Fish", "$5"], ["Malibu Melt", "$6"], ["Vegetarian", "$3"], ["Roast Beef", "$2"], "wraps.jpg", "salmon.jpg", "wrapsTwo.jpg", "wrapsThree.jpg", "wrapsFour.jpg"]
     ],
     "drinks": [
