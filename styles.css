@@ -806,9 +806,14 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 300px;
-    transition: all 1.5s ease;
+    
+}
+
+.newsItem {
+    position: relative;
+    transition: all .8s ease;
     opacity: 0;
+    top: 200px;
 }
 
 .newsText {
@@ -887,7 +892,7 @@ body {
     }
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1170px) {
     .foodContainer {
         width: 90%;
     }

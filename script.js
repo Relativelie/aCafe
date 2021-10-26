@@ -46,7 +46,7 @@ document.addEventListener("keyup", closeFillingsModalEsc);
 
 
 function closeFillingsModal() {
-        document.querySelector(".fillings").style.display = "none";
+    document.querySelector(".fillings").style.display = "none";
 }
 
 function closeFillingsModalEsc(e) {
@@ -204,12 +204,12 @@ function addFoodOnTrolley(list) {
                 functionResult.push(addFoodOnHtml(list[eatingNames[i]], eatingNames[i]));
             }
         }
-        
+
         for (let number = 0; number < functionResult.length; number++) {
-                count += functionResult[number][0];
-                if (functionResult[number][0]===0) {
-                    document.querySelector(`.${functionResult[number][1]}Trolley`).style.display = "none";
-                }
+            count += functionResult[number][0];
+            if (functionResult[number][0] === 0) {
+                document.querySelector(`.${functionResult[number][1]}Trolley`).style.display = "none";
+            }
         }
         if (count === 0) {
             document.querySelector(".trolleyCount").style.display = "none";
@@ -262,9 +262,9 @@ function addFoodOnHtml(list, eatingName) {
             orderCost += list[allselectedFood[i].replace(/['"]+/g, '')][a][1].substring(1) * list[allselectedFood[i].replace(/['"]+/g, '')][a][0];
         }
 
-    if (Object.keys(list[allselectedFood[i].replace(/['"]+/g, '')]).length === 0) {
-        countOfFood = 0
-    }
+        if (Object.keys(list[allselectedFood[i].replace(/['"]+/g, '')]).length === 0) {
+            countOfFood = 0
+        }
     }
     return [countOfFood, eatingName]
 }
@@ -400,12 +400,19 @@ function addOrRemoveFoodFromBasket(e) {
 
 // EVENTS
 
-let eventBlock = document.querySelector(".newsBlockContainer")
+let eventBlock = document.querySelectorAll(".newsItem")
 function showEvents() {
-
-    eventBlock.style.opacity = 1;
-    eventBlock.style.marginTop = '0px';
-}
+    let i=0;
+        let myInterval = setInterval(function() {
+            eventBlock[i].style.opacity = 1;
+            eventBlock[i].style.top = 0;
+            i++
+            if (i===eventBlock.length) {
+                clearInterval(myInterval)
+            }
+        }, 200);
+    }
+    
 
 
 let observer = new IntersectionObserver(function (e) {
@@ -413,7 +420,7 @@ let observer = new IntersectionObserver(function (e) {
         showEvents();
         observer.disconnect();
     }
-}, { threshold: [0.005] });
+}, { threshold: [0.3] });
 
 observer.observe(document.querySelector(".newsBlockContainer"));
 
@@ -421,7 +428,7 @@ document.querySelector(".addFood").addEventListener("click", animatedBasket)
 
 function animatedBasket() {
     document.querySelector(".menuImage").classList.remove("removeAnimation");
-    let myTimeout = setInterval(function() {
+    let myTimeout = setInterval(function () {
         document.querySelector(".menuImage").classList.add("removeAnimation");
         clearInterval(myTimeout);
     }, 1000)
