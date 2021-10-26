@@ -46,7 +46,7 @@ document.addEventListener("keyup", closeFillingsModalEsc);
 
 
 function closeFillingsModal() {
-    document.querySelector(".fillings").style.display = "none";
+        document.querySelector(".fillings").style.display = "none";
 }
 
 function closeFillingsModalEsc(e) {
@@ -199,7 +199,6 @@ function addFoodOnTrolley(list) {
         document.querySelector(".trolleyMenu").classList.remove("empty");
         document.querySelector(".emptyText").style.display = "none";
         let functionResult = [];
-        console.log(count)
         for (let i = 0; i < eatingNames.length; i++) {
             if (Object.keys(list[eatingNames[i]]).length != 0) {
                 functionResult.push(addFoodOnHtml(list[eatingNames[i]], eatingNames[i]));
@@ -414,6 +413,16 @@ let observer = new IntersectionObserver(function (e) {
         showEvents();
         observer.disconnect();
     }
-}, { threshold: [0.4] });
+}, { threshold: [0.005] });
 
-observer.observe(document.querySelector(".eventBlockHeader "));
+observer.observe(document.querySelector(".newsBlockContainer"));
+
+document.querySelector(".addFood").addEventListener("click", animatedBasket)
+
+function animatedBasket() {
+    document.querySelector(".menuImage").classList.remove("removeAnimation");
+    let myTimeout = setInterval(function() {
+        document.querySelector(".menuImage").classList.add("removeAnimation");
+        clearInterval(myTimeout);
+    }, 1000)
+}
