@@ -1,8 +1,8 @@
 const foodDict = {
     "breakfast": [
-        ["Croissants", "Classic French croissant", "from $1", ["with trout", "$5"], ["with bacon", "$3"], ["with jam", "$2"], ["with without filling", "$1"], "croissant.jpg", "salmon.jpg", "bacon.jpg", "jamTwo.jpg", ""],
+        ["Croissants", "Classic French croissant", "from $1", ["with trout", "$5"], ["with bacon", "$3"], ["with jam", "$2"], ["without filling", "$1"], "croissant.jpg", "salmon.jpg", "bacon.jpg", "jamTwo.jpg", ""],
         ["Benedicts", "Grilled vegetables, fried peppers and toast", "from $8", ["Large(400g)", "$20"], ["Medium(350g)", "$15"], ["Small(250g)", "$12"], ["eXtra small(100g)", "$8"], "benedicts.jpg", "benedictOne.jpg", "benedictTwo.jpg", "benedictThree.jpg", "benedicts.jpg"],
-        ["Porridge", "A steaming, creamy bowl of Porridge is something magical", "from $1", ["with trout", "$5"], ["with bacon", "$3"], ["with jam", "$2"], ["with without filling", "$1"], "porridge.jpg", "salmon.jpg", "bacon.jpg", "jamTwo.jpg", ""],
+        ["Porridge", "A steaming, creamy bowl of Porridge is something magical", "from $1", ["with trout", "$5"], ["with bacon", "$3"], ["with jam", "$2"], ["without filling", "$1"], "porridge.jpg", "salmon.jpg", "bacon.jpg", "jamTwo.jpg", ""],
         ["Pancakes", "Classic fluffy American pancakes", "from $1", ["with pineapple", "$5"], ["with peach", "$3"], ["with berries", "$2"], ["without filling", "$1"], "pancakes.jpg", "pineapple.jpg", "peach.jpg", "berries.jpg", ""]
     ],
     "lunch": [
