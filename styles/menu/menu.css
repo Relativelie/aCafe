@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+}
+
+.menu__header h4 {
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(3, 3, 3);
+}

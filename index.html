@@ -1,454 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Made With Love</title>
-    <link rel="shortcut icon"
-        href="https://img.icons8.com/external-becris-lineal-color-becris/64/000000/external-restaurant-hotel-service-becris-lineal-color-becris.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <title>Gu Repio</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-becris-lineal-color-becris/64/000000/external-restaurant-hotel-service-becris-lineal-color-becris.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/menu/menu.css">
+    <link rel="stylesheet" href="./styles/menu/trolley_button.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nunito&family=Roboto&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- WAVE -->
-    <div class="mySvg">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1B1A1A" fill-opacity="1"
-                d="M0,224L34.3,197.3C68.6,171,137,117,206,85.3C274.3,53,343,43,411,48C480,53,549,75,617,101.3C685.7,128,754,160,823,186.7C891.4,213,960,235,1029,213.3C1097.1,192,1166,128,1234,117.3C1302.9,107,1371,149,1406,170.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-            </path>
-        </svg>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header header_bg">
+      <h2>Discover</h2>
+      <h1>Gu Repio</h1>
+      <p>Making delicious food since 1990</p>
+      <a href="#cafeMenu">
+        <button class="btn">Our menu</button>
+      </a>
     </div>
-
     <!-- MENU -->
     <div class="menu">
-        <div class="menuHeader">
-            <h4>Made With Love</h4>
-        </div>
+      <div class="menu__header">
+        <h4>Gu Repio</h4>
+      </div>
+      <div class="menu__button basket-animation remove-animation">
+        <img src="images/png/trolley.png" alt="">
+        <div class="trolley-count"></div>
+        <div class="trolley-menu-container">
+          <div class="basket-container">
+            <!-- <div class="trolleyMenu empty close-trolley"> -->
+            <!-- <div class="empty-trolley">
+              <h3>Cart is empty, put in it something from here.</h3>
+            </div> -->
+            <div class="basket">
+              <!-- <div class="basket__category">
+<h3 class="basket__category__header">Breakfast</h3>
+<div class="basket__category__dish">
+  <p>Item name</p>
+  <p>Cost</p>
+</div>
 
-        <div class="menuImage basketAnimation removeAnimation">
-            <img src="images/trolley.png" alt="">
-            <div class="trolleyCount"></div>
-            <div class="trolleyMenuBlock">
 
-                <div class="trolleyMenu empty closeTrolley">
-                    <div class="emptyText">
-                        <h3>Cart is empty, put in it something from here.</h3>
-                    </div>
 
-                    <div class="notEmptyTrolley">
-                        <div class="breakfastTrolley">
-                            <h3 class="eatingName">Breakfast</h3>
-                            <div class="foodOnTrolley">
-                                <div class="typeOfFoodItemBlock">
-                                    <div class="typeOfFoodItem">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="lunchTrolley">
-                            <h3 class="eatingName">Lunch</h3>
-                            <div class="foodOnTrolley">
-                                <div class="typeOfFoodItemBlock">
-                                    <div class="typeOfFoodItem">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="dinnerTrolley">
-                            <h3 class="eatingName">Dinner</h3>
-                            <div class="foodOnTrolley">
-                                <div class="typeOfFoodItemBlock">
-                                    <div class="typeOfFoodItem">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="drinksTrolley">
-                            <h3 class="eatingName">Drinks</h3>
-                            <div class="foodOnTrolley">
-                                <div class="typeOfFoodItemBlock">
-                                    <div class="typeOfFoodItem">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="orderCostsBlockTrolley">
-                            <div class="costsHeader">
-                                <p>Order cost</p>
-                            </div>
-                            <div class="cost">
-                                <p class="costBasket">fvv</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="btn orderBtn">Order periodical</button>
-                        </div>
-                    </div>
-
+              </div> -->
+              <!-- <div class="breakfastTrolley">
+                <h3 class="eatingName">Breakfast</h3>
+                <div class="foodOnTrolley">
+                  <div class="typeOfFoodItemBlock">
+                    <div class="typeOfFoodItem"></div>
+                  </div>
+                </div> -->
+              </div>
+              <!-- <div class="lunchTrolley">
+                <h3 class="eatingName">Lunch</h3>
+                <div class="foodOnTrolley">
+                  <div class="typeOfFoodItemBlock">
+                    <div class="typeOfFoodItem"></div>
+                  </div>
                 </div>
+              </div>
+              <div class="dinnerTrolley">
+                <h3 class="eatingName">Dinner</h3>
+                <div class="foodOnTrolley">
+                  <div class="typeOfFoodItemBlock">
+                    <div class="typeOfFoodItem"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="drinksTrolley">
+                <h3 class="eatingName">Drinks</h3>
+                <div class="foodOnTrolley">
+                  <div class="typeOfFoodItemBlock">
+                    <div class="typeOfFoodItem"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="orderCostsBlockTrolley">
+                <div class="costsHeader">
+                  <p>Order cost</p>
+                </div>
+                <div class="cost">
+                  <p class="costBasket">fvv</p>
+                </div>
+              </div> -->
+              <div>
+                <button class="btn orderBtn">Order periodical</button>
+              </div>
             </div>
+          </div>
         </div>
-
-
-
+      </div>
     </div>
-
-
-    <div class="mainHeader">
-        <div class="mainHeaderText">
-            <h2>Welcome to</h2>
-            <h1>Made With Love</h1>
-            <p>Making delicious food since 1990</p>
-
-            <a href="#cafeMenu"><button class="btn">Our menu</button></a>
-        </div>
-    </div>
-
     <!-- ABOUT US -->
-    <div class="aboutUsContainer">
-        <img class="imageOne" src="images/aboutUsImg.jpeg" alt="food foto">
-        <div class="aboutUsItem blockHeaders">
-            <h3>Discover</h3>
-            <h2>OUR RESTAURANT</h2>
-            <p>We want that the world have more healthy and happy people, therefore, our restaurant is collected the
-                most modern trends of restaurants</p>
-        </div>
-        <img class="imageTwo" src="images/aboutUsImgTwo.jpeg" alt="food foto">
+    <div class="about">
+      <div class="aboutUsItem blockHeaders">
+        <h3>About</h3>
+        <h2>OUR RESTAURANT</h2>
+        <p>We want that the world have more healthy and happy people, therefore, our restaurant is collected the most modern trends of restaurants</p>
+      </div>
+      <div class="about_image-container"></div>
     </div>
-
     <!-- MENU OF CAFE -->
     <div id="cafeMenu">
-        <div class="cafeMenuHeader blockHeaders">
-            <h3>Our</h3>
-            <h2>MENU</h2>
-        </div>
-        <div class="menuForMobile">
-            <div class="menuButtons">
-                <div class="menuButtonsItem">
-                    <div class="breakfastBtn menuItems selected">
-                        <img src="images/breakfast.png" alt="">
-                        <p>Breakfast</p>
-
-                    </div>
-                    <div class="lunchBtn menuItems">
-                        <img src="images/lunch.png" alt="">
-                        <p>Lunch</p>
-                    </div>
-                    <div class="dinnerBtn menuItems">
-                        <img src="images/dinner.png" alt="">
-                        <p>Dinner</p>
-                    </div>
-                    <div class="drinksBtn menuItems">
-                        <img src="images/drinks.png" alt="">
-                        <p>Drinks</p>
-                    </div>
-                </div>
+      <div class="cafeMenuHeader blockHeaders">
+        <h3>Our</h3>
+        <h2>MENU</h2>
+      </div>
+      <div class="menuForMobile">
+        <div class="menuButtons">
+          <div class="menuButtonsItem">
+            <div class="breakfastBtn menuItems selected">
+              <img src="images/breakfast.png" alt="">
+              <p>Breakfast</p>
             </div>
-
-            <div class="menuContent">
-                <div class="foodContainer breakfast">
-
-                    <div class="foodElement">
-                        <div class="aboutFood">
-                            <div class="foodElementText">
-                                <h2>Croissants</h2>
-                                <p>Classic French croissant</p>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            <h3>from 1$</h3>
-                            <button class="btn firstFood">Choice</button>
-                        </div>
-
-                        <div class="foodImageBlock">
-                            <div class="foodImageOne foodImage"></div>
-                        </div>
-                    </div>
-
-                    <div class="foodElement">
-                        <div class="aboutFood">
-                            <div class="foodElementText">
-                                <h2>Benedicts</h2>
-                                <p>Grilled vegetables, fried peppers and toast</p>
-                            </div>
-                            <div class="foodImageBlock">
-                                <div class="foodImageTwo foodImage"></div>
-                            </div>
-
-                        </div>
-
-                        <div class="price">
-                            <h3>from 8$</h3>
-                            <button class="btn secondFood">Choice</button>
-                        </div>
-                    </div>
-
-                    <div class="foodElement">
-                        <div class="aboutFood">
-                            <div class="foodElementText">
-                                <h2>Porridge</h2>
-                                <p>A steaming, creamy bowl of Porridge is something magical</p>
-                            </div>
-                            <div class="foodImageBlock">
-                                <div class="foodImageThree foodImage"></div>
-                            </div>
-
-                        </div>
-
-                        <div class="price">
-                            <h3>from 1$</h3>
-                            <button class="btn thirdFood">Choice</button>
-                        </div>
-                    </div>
-
-                    <div class="foodElement">
-                        <div class="aboutFood">
-                            <div class="foodElementText">
-                                <h2>Pancakes</h2>
-                                <p>Classic fluffy American pancakes</p>
-                            </div>
-                            <div class="foodImageBlock">
-                                <div class="foodImageFour foodImage"></div>
-                            </div>
-
-                        </div>
-
-                        <div class="price">
-                            <h3>from 5$</h3>
-                            <button class="btn fourthFood">Choice</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fillings">
-                    <div class="fillingsBackground"></div>
-                    <div class="fillingsContainer">
-
-                        <div class="closeBtn">
-                            <img src="images/close.png" alt="">
-                        </div>
-                        <h3>Choice of options</h3>
-                        <div class="fillingsItems">
-                            <div class="fillingsAndCost fillingsAndCostOne">
-                                <div class="fillingOne fillingsItem">
-                                </div>
-                                <div class="fillingsName">
-                                    <h4>trout</h4>
-                                </div>
-                                <div class="fillingOneCost">
-                                    <p>$5</p>
-                                </div>
-
-                            </div>
-
-                            <div class="fillingsAndCost fillingsAndCostTwo">
-                                <div class="fillingTwo fillingsItem">
-                                </div>
-                                <div class="fillingsName">
-                                    <h4>bacon</h4>
-                                </div>
-                                <div class="fillingTwoCost">
-                                    <p>$3</p>
-                                </div>
-                            </div>
-
-                            <div class="fillingsAndCost fillingsAndCostThree">
-                                <div class="fillingThree fillingsItem">
-                                </div>
-                                <div class="fillingsName">
-                                    <h4>jam</h4>
-                                </div>
-                                <div class="fillingThreeCost">
-                                    <p>$2</p>
-                                </div>
-                            </div>
-
-                            <div class="fillingsAndCost fillingsAndCostFour">
-                                <div class="fillingFour without fillingsItem">
-                                </div>
-                                <div class="fillingsName">
-                                    <h4>without filling</h4>
-                                </div>
-
-                                <div class="fillingFourCost">
-                                    <p>$1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="addFood btn">Add to Basket</button>
-                    </div>
-                </div>
+            <div class="lunchBtn menuItems">
+              <img src="images/lunch.png" alt="">
+              <p>Lunch</p>
             </div>
+            <div class="dinnerBtn menuItems">
+              <img src="images/dinner.png" alt="">
+              <p>Dinner</p>
+            </div>
+            <div class="drinksBtn menuItems">
+              <img src="images/drinks.png" alt="">
+              <p>Drinks</p>
+            </div>
+          </div>
         </div>
+        <div class="menuContent">
+          <div class="foodContainer breakfast">
+            <div class="foodElement">
+              <div class="aboutFood">
+                <div class="foodElementText">
+                  <h2>Croissants</h2>
+                  <p>Classic French croissant</p>
+                </div>
+              </div>
+              <div class="price">
+                <h3>from 1$</h3>
+                <button class="btn firstFood">Choose</button>
+              </div>
+              <div class="foodImageBlock">
+                <div class="foodImageOne foodImage"></div>
+              </div>
+            </div>
+            <div class="foodElement">
+              <div class="aboutFood">
+                <div class="foodElementText">
+                  <h2>Benedicts</h2>
+                  <p>Grilled vegetables, fried peppers and toast</p>
+                </div>
+                <div class="foodImageBlock">
+                  <div class="foodImageTwo foodImage"></div>
+                </div>
+              </div>
+              <div class="price">
+                <h3>from 8$</h3>
+                <button class="btn secondFood">Choose</button>
+              </div>
+            </div>
+            <div class="foodElement">
+              <div class="aboutFood">
+                <div class="foodElementText">
+                  <h2>Porridge</h2>
+                  <p>A steaming, creamy bowl of Porridge is something magical</p>
+                </div>
+                <div class="foodImageBlock">
+                  <div class="foodImageThree foodImage"></div>
+                </div>
+              </div>
+              <div class="price">
+                <h3>from 1$</h3>
+                <button class="btn thirdFood">Choose</button>
+              </div>
+            </div>
+            <div class="foodElement">
+              <div class="aboutFood">
+                <div class="foodElementText">
+                  <h2>Pancakes</h2>
+                  <p>Classic fluffy American pancakes</p>
+                </div>
+                <div class="foodImageBlock">
+                  <div class="foodImageFour foodImage"></div>
+                </div>
+              </div>
+              <div class="price">
+                <h3>from 5$</h3>
+                <button class="btn fourthFood">Choose</button>
+              </div>
+            </div>
+          </div>
+          <div class="fillings">
+            <div class="fillingsBackground"></div>
+            <div class="fillingsContainer">
+              <div class="closeBtn">
+                <img src="images/close.png" alt="">
+              </div>
+              <h3>Choice of options</h3>
+              <div class="fillingsItems">
+                <div class="fillingsAndCost fillingsAndCostOne">
+                  <div class="fillingOne fillingsItem"></div>
+                  <div class="fillingsName">
+                    <h4>trout</h4>
+                  </div>
+                  <div class="fillingOneCost">
+                    <p>$5</p>
+                  </div>
+                </div>
+                <div class="fillingsAndCost fillingsAndCostTwo">
+                  <div class="fillingTwo fillingsItem"></div>
+                  <div class="fillingsName">
+                    <h4>bacon</h4>
+                  </div>
+                  <div class="fillingTwoCost">
+                    <p>$3</p>
+                  </div>
+                </div>
+                <div class="fillingsAndCost fillingsAndCostThree">
+                  <div class="fillingThree fillingsItem"></div>
+                  <div class="fillingsName">
+                    <h4>jam</h4>
+                  </div>
+                  <div class="fillingThreeCost">
+                    <p>$2</p>
+                  </div>
+                </div>
+                <div class="fillingsAndCost fillingsAndCostFour">
+                  <div class="fillingFour without fillingsItem"></div>
+                  <div class="fillingsName">
+                    <h4>without filling</h4>
+                  </div>
+                  <div class="fillingFourCost">
+                    <p>$1</p>
+                  </div>
+                </div>
+              </div>
+              <button class="addFood btn">Add to Basket</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="orderBlock">
-        <div class="orderBackground"></div>
-        <div class="orderModal">
-            <div class="closeOrderBtn">
-                <img src="images/close.png" alt="">
-            </div>
-            <h3>Order periodical</h3>
-            <p>We'll call you back ASAP to clarify the order</p>
-            <div class="basketItems">
-            </div>
-            <form action="">
-                <div>
-                    <label for="">Phone number</label>
-                    <input type="tel">
-                </div>
-                <div>
-                    <label for="">Name</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Delivery address</label>
-                    <input type="text">
-                </div>
-                <div class="orderCosts">
-                    <label for="">Order costs</label>
-                    <p></p>
-                </div>
-            </form>
-            <div class="sendOrderBtn">
-                <button class="btn">Order</button>
-            </div>
+      <div class="orderBackground"></div>
+      <div class="orderModal">
+        <div class="closeOrderBtn">
+          <img src="images/close.png" alt="">
         </div>
+        <h3>Order periodical</h3>
+        <p>We'll call you back ASAP to clarify the order</p>
+        <div class="basketItems"></div>
+        <form action="">
+          <div>
+            <label for="">Phone number</label>
+            <input type="tel">
+          </div>
+          <div>
+            <label for="">Name</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="">Delivery address</label>
+            <input type="text">
+          </div>
+          <div class="orderCosts">
+            <label for="">Order costs</label>
+            <p></p>
+          </div>
+        </form>
+        <div class="sendOrderBtn">
+          <button class="btn">Order</button>
+        </div>
+      </div>
     </div>
-
     <div class="successfullyOrder">
-        <div class="successfullyBackground"></div>
-        <div class="successfullyModal">
-            <h3>Your order has been sent for processing</h3>
-            <p>We will call you back within 5min</p>
-            <button class="btn">Ok</button>
-        </div>
+      <div class="successfullyBackground"></div>
+      <div class="successfullyModal">
+        <h3>Your order has been sent for processing</h3>
+        <p>We will call you back within 5min</p>
+        <button class="btn">Ok</button>
+      </div>
     </div>
-
     <!-- NEWS -->
     <div class="newsBlock">
-        <div class="blockHeaders eventBlockHeader">
-            <h3>Our</h3>
-            <h2>EVENTS</h2>
-        </div>
-
-        <div class="newsBlockContainer">
-
-            <div class="newsItem newsItemOne">
-                <div class="newsTextBlock">
-                    <div class="newsText">
-                        <div class="newsheader">
-                            <h3>Tropical day</h3>
-                            <h3 class="eventDate">10.11.2021</h3>
-                        </div>
-                        <div class="infoAboutEvent">
-                            <p>In this cold season, remember your palm vacation with us! Tropical cocktails, fresh
-                                seafood and more can help you relax as much as your vacation</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="images/newsThree.jpg" alt="">
+      <div class="blockHeaders eventBlockHeader">
+        <h3>Our</h3>
+        <h2>EVENTS</h2>
+      </div>
+      <div class="newsBlockContainer">
+        <div class="newsItem newsItemOne">
+          <div class="newsTextBlock">
+            <div class="newsText">
+              <div class="newsheader">
+                <h3>Tropical day</h3>
+                <h3 class="eventDate">10.11.2021</h3>
+              </div>
+              <div class="infoAboutEvent">
+                <p>In this cold season, remember your palm vacation with us! Tropical cocktails, fresh seafood and more can help you relax as much as your vacation</p>
+              </div>
             </div>
-            <div class="newsItem newsItemTwo">
-                <div class="newsTextBlock">
-                    <div class="newsText">
-                        <div class="newsheader">
-                            <h3>Asian Day</h3>
-                            <h3 class="eventDate">15.12.2021</h3>
-                        </div>
-                        <div class="infoAboutEvent">
-                            <p>Do you miss your homeland, love dramas, or have you always wanted to visit Asia but
-                                didn't have time?
-                                This day is especially for you! Our dishes will take you to the central streets of
-                                Tokyo, Beijing or Seoul.</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="images/newsTwo.jpg" alt="">
-            </div class="newsItem">
-            <div class="newsItem newsItemThree">
-                <div class="newsTextBlock">
-                    <div class="newsText">
-                        <div class="newsheader">
-                            <h3>Dating evening</h3>
-                            <h3 class="eventDate">14.02.2022</h3>
-                        </div>
-                        <div class="infoAboutEvent">
-                            <p>If you are looking for new acquaintances or just want to have a good time - this day
-                                is
-                                for
-                                you. On this day we do not reserve tables, you can take any table and have
-                                conversations
-                                with
-                                interesting people</p>
-                        </div>
-
-                    </div>
-                </div>
-                <img src="images/newsOne.jpg" alt="">
-
-
-            </div>
+          </div>
+          <img src="images/newsThree.jpg" alt="">
         </div>
+        <div class="newsItem newsItemTwo">
+          <div class="newsTextBlock">
+            <div class="newsText">
+              <div class="newsheader">
+                <h3>Asian Day</h3>
+                <h3 class="eventDate">15.12.2021</h3>
+              </div>
+              <div class="infoAboutEvent">
+                <p>Do you miss your homeland, love dramas, or have you always wanted to visit Asia but didn't have time? This day is especially for you! Our dishes will take you to the central streets of Tokyo, Beijing or Seoul.</p>
+              </div>
+            </div>
+          </div>
+          <img src="images/newsTwo.jpg" alt="">
+        </div class="newsItem">
+        <div class="newsItem newsItemThree">
+          <div class="newsTextBlock">
+            <div class="newsText">
+              <div class="newsheader">
+                <h3>Dating evening</h3>
+                <h3 class="eventDate">14.02.2022</h3>
+              </div>
+              <div class="infoAboutEvent">
+                <p>If you are looking for new acquaintances or just want to have a good time - this day is for you. On this day we do not reserve tables, you can take any table and have conversations with interesting people</p>
+              </div>
+            </div>
+          </div>
+          <img src="images/newsOne.jpg" alt="">
+        </div>
+      </div>
     </div>
-
-
     <!-- FOOTER -->
     <div class="footer">
-        <div class="contactInfo">
-
-
-            <div class="numbers">
-
-                <div class="numbersItem">
-                    <a href="tel: +000000000" class="phoneNumberStyle">+000 000 000</a>
-                    <p class="numberPar">Free for Kanada </p>
-                </div>
-
-                <div class="numbersItem">
-                    <a href="tel: +000000000" class="phoneNumberStyle">+000 000 000</a>
-                    <p class="numberPar">For calls from abroad</p>
-                </div>
-
-            </div>
-
-            <div class="socialNetwork">
-                <a class="socialNetworkItem" href="#">
-                    <img class="socialNetworkItemImg" src="images/facebook.png" alt="facebook icon">
-                </a>
-
-                <a class="socialNetworkItem" href="https://t.me/OnePunchOnBug">
-                    <img class="socialNetworkItemImg" src="images/telega.png" alt="telegram icon">
-                </a>
-
-                <a class="socialNetworkItem" href="#">
-                    <img class="socialNetworkItemImg" src="images/insta.png" alt="insta png">
-                </a>
-                <a class="socialNetworkItem" href="#">
-                    <img class="socialNetworkItemImg" src="images/vk.png" alt="vk icon">
-                </a>
-            </div>
-
+      <div class="contactInfo">
+        <div class="numbers">
+          <div class="numbersItem">
+            <a href="tel: +000000000" class="phoneNumberStyle">+000 000 000</a>
+            <p class="numberPar">Free for Kanada </p>
+          </div>
+          <div class="numbersItem">
+            <a href="tel: +000000000" class="phoneNumberStyle">+000 000 000</a>
+            <p class="numberPar">For calls from abroad</p>
+          </div>
         </div>
+        <div class="socialNetwork">
+          <a class="socialNetworkItem" href="#">
+            <img class="socialNetworkItemImg" src="images/facebook.png" alt="facebook icon">
+          </a>
+          <a class="socialNetworkItem" href="https://t.me/OnePunchOnBug">
+            <img class="socialNetworkItemImg" src="images/telega.png" alt="telegram icon">
+          </a>
+          <a class="socialNetworkItem" href="#">
+            <img class="socialNetworkItemImg" src="images/insta.png" alt="insta png">
+          </a>
+          <a class="socialNetworkItem" href="#">
+            <img class="socialNetworkItemImg" src="images/vk.png" alt="vk icon">
+          </a>
+        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
 
+    <script type="module" src="./scripts/entities.js"></script>
+    <script type="module" src="./scripts/selected_food.js"></script>
+    <script type="module" src="./scripts/entities.js"></script>
+    <script type="module" src="./scripts/menu/fillings_menu/get_selected_category.js"></script>
+    <script type="module" src="./scripts/menu/fillings_menu/toggle.js"></script>
+    <script type="module" src="./scripts/basket/basket.js"></script>
+    <script type="module" src="./scripts/basket/basket_item.js"></script>
+    <script type="module" src="./scripts/menu/fillings_menu/on_click_filling.js"></script>
+    <script type="module" src="./scripts/events.js"></script>
+    <script type="module" src="./scripts/menu/set_menu_content.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
 </html>

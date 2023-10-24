@@ -1,0 +1,54 @@
+
+/* ABOUT */
+.about {
+    margin-top: 10em;
+  }
+  
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 30em;
+    height: 40em;
+    background-image: url('../images/png/olive.png');
+    background-position: left -6% top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+  }
+  
+  .about_image-container {
+    width: 30em;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right top 40%;
+    background-image: url('../images/png/meat_plate.png');
+  }
+  
+  .aboutUsItem {
+    justify-self: center;
+    align-self: center;
+    padding: 5em;
+  }
+  
+  .aboutUsItem p {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .blockHeaders h3 {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(207, 141, 79);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+  }
+  
+  .blockHeaders h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+  }
+  
