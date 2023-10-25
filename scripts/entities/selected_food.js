@@ -1,4 +1,4 @@
-class SelectedFood {
+class SelectedFoodEntity {
   constructor() {
     this.category = null; // breakfast, lunch, dinner
     this.dish = null; // croissant, soup, steak
@@ -17,17 +17,19 @@ class SelectedFood {
     this.filling = filling;
   }
 
-  get filling() {
-    return this.filling;
-  }
-
   getSelectedFood() {
     return {
       category: this.category,
       dish: this.dish,
-      fillings: this.filling,
+      filling: this.filling,
     };
+  }
+
+  clearSelectedFood() {
+    this.category = null;
+    this.dish = null;
+    this.filling = null;
   }
 }
 
-export { SelectedFood };
+export { SelectedFoodEntity };

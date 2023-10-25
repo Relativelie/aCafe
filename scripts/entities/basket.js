@@ -1,4 +1,4 @@
-class Basket {
+class BasketEntity {
   constructor() {
     this.items = {
       breakfast: [], // BasketItem inside
@@ -17,4 +17,4 @@ class Basket {
   }
 }
 
-export { Basket };
+export { BasketEntity };

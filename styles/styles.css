@@ -229,7 +229,7 @@ body {
 }
 
 .croissantImg {
-  background-image: url('images/croissant.jpg');
+  background-image: url('../assets/jpg/croissant.jpg');
 }
 
 .aboutFood {
@@ -250,19 +250,19 @@ body {
 }
 
 .foodImageTwo {
-  background-image: url('images/benedicts.jpg');
+  background-image: url('../assets/jpg/benedicts.jpg');
 }
 
 .foodImageOne {
-  background-image: url('images/croissant.jpg');
+  background-image: url('../assets/jpg/croissant.jpg');
 }
 
 .foodImageThree {
-  background-image: url('images/porridge.jpg');
+  background-image: url('../assets/jpg/porridge.jpg');
 }
 
 .foodImageFour {
-  background-image: url('images/pancakes.jpg');
+  background-image: url('../assets/jpg/pancakes.jpg');
 }
 
 .selected {

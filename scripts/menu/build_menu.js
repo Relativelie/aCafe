@@ -1,6 +1,7 @@
-import { getFood, numberOfChoice } from '../get_food.js';
+import { getMenuData } from '../data/menu_data.js';
+import { numberOfChoice } from '../data/number_of_choice.js';
 
-const foodData = getFood();
+const foodData = getMenuData();
 
 function buildMenuItems(e) {
   const mealtime = e.srcElement.parentElement.classList[0]
@@ -50,7 +51,7 @@ function buildMenuFillings(e, mealtime) {
 }
 
 function getImagePath(imageName) {
-  return `url("../images/${imageName}")`;
+  return `url("../assets/jpg/${imageName}")`;
 }
 
 export { buildMenuItems, buildMenuFillings };
